@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-regular.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url('../fonts/raleway-bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway Thin Italic';
+  src: url('../fonts/raleway-thin-italic.ttf')  format('truetype');
+}
+
+html {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Raleway';
+    display: table-cell;
+    vertical-align: middle;
+    
+    background: #000000 url('../img/bg.png') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .90);
+    border: 2px solid #81A2BE;
+    border-radius: 10px;
+}
+
+header {
+    font-family: 'Raleway';
+    color: #4E9FB1;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Raleway Thin Italic';
+    font-size: 26px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    color: #81A2BE;
+}
+
+#timedate {
+    font-family: 'Raleway Bold';
+}
+
+#time {
+    font-size: 46px;
+}
+
+#date {
+    font-size: 20px;
+}
+
+.searchContainer {
+    text-align: center;
+    margin: 80px 0px;
+}
+
+.searchForm {
+    display: inline-block;
+}
+
+.searchBar {
+    width: 32px;
+    height: 32px;
+    padding: 0px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: right center;
+    border: 2px solid #373B41;
+
+    transition: all 1s;
+}
+
+.searchBar:hover {
+    cursor: pointer;
+    transition: all 0.5s;
+    background-position: right center;
+    opacity: 1;
+}
+
+.searchBar:focus {
+    cursor: text;
+    width: 300px;
+    padding: 0px 5px; 
+    opacity: 1;
+}
+
+.searchBar::-webkit-input-placeholder { color: rgba(0,0,0,0); }
+.searchBar::-moz-placeholder          { color: rgba(0,0,0,0); opacity: 1; } /* Fx 19+ */
+.searchBar:-ms-input-placeholder      { color: rgba(0,0,0,0); } /* IE 10+ */
+
+.searchBar:focus::-webkit-input-placeholder { color: rgba(100,100,100,1); }
+.searchBar:focus::-moz-placeholder          { color: rgba(100,100,100,1); opacity: 1; } /* Fx 19+ */
+.searchBar:focus:-ms-input-placeholder      { color: rgba(100,100,100,1); } /* IE 10+ */
+
+.search_google {
+    background-image: url('../img/icons/google.png');
+}
+
+.search_bing {
+    background-image: url('../img/icons/bing.png');
+}
+
+.search_duckduckgo {
+    background-image: url('../img/icons/duckduckgo.png');
+}
+
+.buttonList {
+    text-align: center;
+}
+
+.buttonList, .buttonList ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.button {
+    position: relative;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+.button > a {
+    display: inline-block;
+    min-width: 140px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 5px;
+    border: 2px solid #373B41;
+    outline: none;
+    transition: all 1s;
+    color: #4E9FB1;
+    background: #1D1F21;
+}
+
+.button > ul {
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    max-height: 0;
+    border-width: 0;
+    border-style: solid;
+    transition: all 1s;
+    z-index: 10;
+    border-color: #373B41;
+}
+.button:hover > ul {
+    max-height: 200px;
+    border-width: 1px;
+    border-style: solid;
+    transition: max-height 0.5s, border 1s;
+}
+
+.button > ul > li {
+    display: block;
+}
+.button > ul > li > a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px 0;
+    outline: 0;
+    transition: all 1s;
+    color: #81A2BE;
+    background: #373B41;
+}
+.button > ul > li > a:hover {
+    color: #1D1F21;
+    background: #4E9FB1;
+}
