@@ -53,16 +53,24 @@ point your browser start page setting to it.
 
 
 ## Feedback
-I would love your feedback! If you found any of the scripts in this git repo useful, 
-please drop me [an email](mailto:timothykeith@gmail.com).
+I would love your feedback! If you use this as a base for your start page, 
+please drop me [an email](mailto:timothykeith@gmail.com). For the privacy 
+conscious, feel free to encrypt any messages using my [PGP key](http://pgp.mit.edu/pks/lookup?op=vindex&fingerprint=on&search=0xF4F4A135C022EE12):
+
+> 4135 C593 1D89 368E 7F32 C8ED F4F4 A135 C022 EE12
+
+To import it into your keyring:
+```console
+$  gpg --keyserver pgp.mit.edu --recv-key 4135C5931D89368E7F32C8EDF4F4A135C022EE12
+```
 
 Submit bug reports via GitHub's [Issue Tracker](https://github.com/keithieopia/startpage/issues)
 
 
 ## Author
-Copyright &copy; 2016 Timothy Keith, except where otherwise noted.
+Copyright &copy; 2016 Timothy Keith
 
-License: The BSD 2-Clause License, see [LICENSE](https://raw.githubusercontent.com/keithieopia/startpage/master/LICENSE)
+Licensed under the [MIT license](https://github.com/keithieopia/startpage/blob/master/LICENSE).
 
-_This is free software: you are free to change and redistribute it._
-_There is NO WARRANTY, to the extent permitted by law._
+*This is free software: you are free to change and redistribute it. There is NO 
+WARRANTY, to the extent permitted by law.*
